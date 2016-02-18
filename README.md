@@ -3,11 +3,14 @@
 
 # what is it. 
 This is a mxnet operator layer for multilabel classification. It implements multilabel softmax.
+
 We assume the num of labels for each sample is known and fixed, denoted as k. Then the ground truth label matrix (size nxk where n is the num of sampels per batch) have values of [0,K-1] where K is the largest label index.
+
 (In the case k is not fixed for each sample, one can bulid the ground truth label matrix of size nxkm, where km is the largest possible num of labels for any sample, and assign the useless entries to be any values outside [0, K-1])
 
 # how to use it.
 Put the 3 files (softmax_multilabel_output-inh.h, softmax_multilabel_output.cc, softmax_multilabel_output.cu) into mxnet/src/operator and recompile mxnet.
+
 Then one can use it as any other operators. The following is a simple example.
 
     ...
