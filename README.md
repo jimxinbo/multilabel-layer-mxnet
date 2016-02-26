@@ -20,6 +20,8 @@ Then one can use it as any other operators. The following is a simple example.
     msoftmax = mx.sym.SoftmaxMultilabelOutput(data=fc, name='msoftmax', num_label=num_label)
     executor = msoftmax.simple_bind(ctx=ctx, data=data_shape, grad_req='write')
     ...
+  
+The above example used low level API of MXnet which is more flexible, please find more details here: https://github.com/dmlc/mxnet/blob/master/example/notebooks/simple_bind.ipynb
     
 # some thoughts. 
 In theory, the ground truth matrix often appears to be of size nxK with 0s and 1s. We have assumed that k is usually much smaller than K and the current choice save certain space. 
