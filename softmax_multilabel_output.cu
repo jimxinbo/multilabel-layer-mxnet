@@ -5,7 +5,7 @@
  * modified from softmax_output.cu by Bo Xin
 */
 
-#include "./bx_softmax_multilabel_output-inl.h"
+#include "./softmax_multilabel_output-inl.h"
 
 namespace mxnet {
 namespace op {
