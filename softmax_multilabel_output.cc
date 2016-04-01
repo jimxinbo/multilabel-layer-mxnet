@@ -4,7 +4,7 @@
  * \brief
  * modified from softmax_output.cc by Bo Xin
 */
-#include "./bx_softmax_multilabel_output-inl.h"
+#include "./softmax_multilabel_output-inl.h"
 
 
 namespace mxnet {
